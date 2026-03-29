@@ -1,18 +1,26 @@
-## Getting Started
+# Aula Anatomia das Classes da Formação de Java Developer da DIO - Digital Innovation One
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Pasta contendo todos os conteúdo realizados na Aula de Anatomia das Classes.
 
-## Folder Structure
+## As progressões estão em commits
 
-The workspace contains two folders by default, where:
+A cada conteúdo realizado foi feito um commit para salvar o progresso, todos os commits estão descritos de acordo com cada parte
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### O que foi aprendido
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+~~~~java
+final String BR = "Brasil"; // Fazendo a declaração do final antes de qualquer variável, transforma ela em uma variável imutável
+int ano = 2005; // Toda declaração de variável deve ser declarada: Tipo, nome da variável, = (atribuição), e o valor
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+// Para criar um método com retorno deve-se adicionar após a declarção static, como o exemplo a baixo
+public static String nomeCompleto(primeiroNome, segundoNome){
+    return "Resultado do método " + primeiroNome.concat(" ").concat(segundoNome);   
+}
+// Para chamar o método deve ser realizado da seguinte forma.
+String primerioNome = "Luan"; // Declarar a variável, não precisa necessariamente receber o mesmo nome dos parâmetros
+String segundoNome = "Rodrgues";
 
-## Dependency Management
+String nomeCompleto = nomeCompleto(primeiroNome, segundoNome); // Para chamar o método deve-se criar a variável que irá receber o resultado do método, e adicionar as variáveis do parâmetro
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+~~~~
